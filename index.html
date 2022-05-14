@@ -1,0 +1,87 @@
+<html>
+
+<head>
+
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+</head>
+
+<body>
+
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+
+<a id="kakao-link-btn" href="javascript:sendLink()">
+
+  <img
+
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+
+  />
+
+</a>
+
+<script type="text/javascript">
+
+ Kakao.init('0d486d597657688959478fb8af2f83bc');
+
+  function sendLink() {
+
+    Kakao.Link.sendDefault({
+
+      objectType: 'feed',
+
+      content: {
+
+        title: '선물과 메시지를 보내셨습니다.',
+
+        
+
+        imageUrl:
+
+          'https://mblogthumb-phinf.pstatic.net/MjAyMjA1MTRfMjE1/MDAxNjUyNTE4MzE0NTkz.MKtvH61lxPhdcw_nFHca9w3sqeq-pK5UD4Tcirf_AWcg.bzMhSPUrZdDrV25BT1KD57TH-ThonMztiL2rQ4uG9mUg.PNG.iamcy1013/iphone%EF%BC%BFmini4.png?type=w800',
+
+        link: {
+
+          mobileWebUrl: 'https://verycutecats.000webhostapp.com',
+
+          webUrl: 'https://verycutecats.000webhostapp.com',
+
+        },
+
+      },
+
+      
+
+      buttons: [
+
+        {
+
+          title: '선물함으로 가기',
+
+          link: {
+
+            mobileWebUrl: 'https://verycutecats.000webhostapp.com',
+
+            webUrl: 'https://verycutecats.000webhostapp.com',
+
+          },
+
+        },
+
+      ],
+
+    })
+
+  }
+
+</script>
+
+<!-- www.blackcats4567.com -->
+
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+
+  </body>
+
+</html>
